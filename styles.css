@@ -5,10 +5,209 @@ body {
     background-attachment: fixed;
 }
 
+h1, h2, p, strong {
+    color: #FFF;
+}
+
+h1, h2, h3 {
+    font-family: 'Koulen', serif;
+}
+
+p, strong {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 80px;
+}
+
 section.contact-striplink {
-    background-image: url('img/Contacts.svg');
+    background: linear-gradient(180deg, rgb(0 73 114 / 69%) 0%, rgba(217, 217, 217, 0) 100%, #0486CF 100%);
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
     padding: 50px 0px;
+}
+
+section.contact-striplink .contact-wrap {
+    gap: 100px;
+}
+
+section.contact-striplink a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+section.contact-striplink p {
+    margin-bottom: unset;
+}
+
+section.contact-striplink .contact-item {
+    gap: 10px;
+}
+
+section.hero-banner {
+    padding: 200px 0 80px;
+}
+
+section.hero-banner h1 {
+    font-size: 96px;
+    line-height: 114px;
+    letter-spacing: 0.105em;
+    max-width: 450px;
+    margin-bottom: 50px;
+}
+
+section.hero-banner strong {
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: 0.105em;
+}
+
+section.hero-banner img {
+    padding-right: 70px;
+}
+
+section.clients {
+    padding: 50px 0px;
+}
+
+section.clients h2 {
+    margin-bottom: 60px;
+}
+
+section.clients .carousel-col {
+    background: linear-gradient(94.44deg, #BDBDBD 20.02%, rgba(83, 83, 83, 0) 100%, rgba(83, 83, 83, 0) 95.12%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.clients .carousel-col .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+section.clients .carousel-col .owl-carousel .owl-item {
+    height: 100%;
+}
+
+section.clients .carousel-col .owl-carousel .owl-item img {
+    width: unset;
+    max-width: 320px;
+    max-height: 100px;
+}
+
+section.clients .carousel-col .owl-carousel .owl-dots {
+    display: none;
+}   
+
+section.skills {
+    padding: 200px 0 50px;
+}
+
+section.skills h2 {
+    margin-bottom: unset;
+}
+
+section.skills hr.white-line {
+    border-color: #FFF;
+    opacity: 1;
+    margin-bottom: 60px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.skills .skill-wrapper {
+    gap: 50px
+}
+
+section.skills .skill-wrapper .skill-item {
+    width: 30%;
+}
+
+section.skills .skill-wrapper .skill-item img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1366px) {
+    section.contact-striplink .contact-wrap {
+        gap: 50px;
+    }
+
+    section.clients .carousel-col {
+        padding-left: unset;
+        padding-right: unset;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    section.contact-striplink .contact-wrap {
+        gap: 30px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    section.contact-striplink {
+        padding: 20px 0px;
+    }
+
+    section.contact-striplink .contact-wrap {
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: translateX(30%);
+    }
+
+    section.hero-banner img {
+        padding-right: 20px;
+        float: unset !important;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    section.hero-banner h1 {
+        margin-bottom: 20px;
+    }
+
+    section.hero-banner strong {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    section.hero-banner h1, section.hero-banner strong {
+        text-align: center;
+        max-width: unset;
+        width: 100%;
+    }
+
+    section.clients .carousel-col .owl-carousel .owl-item img {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    section.hero-banner img {
+        padding-right: unset;
+    }
+
+    section.skills {
+        padding-top: 80px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    section.contact-striplink .contact-wrap {
+        transform: translateX(5%);
+    }
+
+    section.hero-banner h1 {
+        font-size: 60px;
+        line-height: unset;
+    }
 }
