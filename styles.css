@@ -6,19 +6,19 @@ body {
 }
 
 h1, h2, p, strong {
-    color: #FFF;
+    color: #FFF !important;
 }
 
 h1, h2, h3 {
-    font-family: 'Koulen', serif;
+    font-family: 'Koulen', serif !important;
 }
 
 p, strong {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 80px !important;
 }
 
 section.contact-striplink {
